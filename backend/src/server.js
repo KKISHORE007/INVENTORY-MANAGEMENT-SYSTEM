@@ -17,6 +17,7 @@ const purchaseOrderRoutes = require('./routes/purchaseOrderRoutes');
 const customerRoutes = require('./routes/customerRoutes');
 const salesOrderRoutes = require('./routes/salesOrderRoutes');
 const returnRoutes = require('./routes/returnRoutes');
+const dashboardRoutes = require('./routes/dashboardRoutes');
 
 const initCronJobs = require('./jobs/cronJobs');
 
@@ -44,6 +45,7 @@ if (process.env.NODE_ENV === 'development') {
 
 // Mount routers
 app.use('/api/auth', authRoutes);
+app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/warehouses', warehouseRoutes);
