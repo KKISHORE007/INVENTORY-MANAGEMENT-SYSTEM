@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
-import { Package, LayoutDashboard, ListTree, LogOut, Tags, Warehouse, Boxes, Users, ShoppingCart, UserCheck, Receipt, RotateCcw, FileText } from 'lucide-react';
+import { Package, LayoutDashboard, ListTree, LogOut, Tags, Warehouse, Boxes, Users as UsersIcon, ShoppingCart, UserCheck, Receipt, RotateCcw, FileText, Shield } from 'lucide-react';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout, reset } from '../features/auth/authSlice';
 
@@ -21,13 +21,17 @@ const MainLayout = () => {
     { name: 'Products', path: '/products', icon: <Tags className="w-5 h-5 mr-3" /> },
     { name: 'Categories', path: '/categories', icon: <ListTree className="w-5 h-5 mr-3" /> },
     { name: 'Warehouses', path: '/warehouses', icon: <Warehouse className="w-5 h-5 mr-3" /> },
-    { name: 'Suppliers', path: '/suppliers', icon: <Users className="w-5 h-5 mr-3" /> },
+    { name: 'Suppliers', path: '/suppliers', icon: <UsersIcon className="w-5 h-5 mr-3" /> },
     { name: 'Purchase Orders', path: '/purchase-orders', icon: <ShoppingCart className="w-5 h-5 mr-3" /> },
     { name: 'Customers', path: '/customers', icon: <UserCheck className="w-5 h-5 mr-3" /> },
     { name: 'Sales Orders', path: '/sales-orders', icon: <Receipt className="w-5 h-5 mr-3" /> },
     { name: 'Returns', path: '/returns', icon: <RotateCcw className="w-5 h-5 mr-3" /> },
     { name: 'Reports', path: '/reports', icon: <FileText className="w-5 h-5 mr-3" /> },
   ];
+
+  if (user?.role === 'Admin') {
+    navItems.push({ name: 'Users (Admin)', path: '/users', icon: <Shield className="w-5 h-5 mr-3" /> });
+  }
 
   const currentRouteName = navItems.find(item => location.pathname.startsWith(item.path))?.name || 'Dashboard';
 

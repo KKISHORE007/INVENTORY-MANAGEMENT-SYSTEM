@@ -19,6 +19,7 @@ const salesOrderRoutes = require('./routes/salesOrderRoutes');
 const returnRoutes = require('./routes/returnRoutes');
 const dashboardRoutes = require('./routes/dashboardRoutes');
 const reportRoutes = require('./routes/reportRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 const initCronJobs = require('./jobs/cronJobs');
 
@@ -57,6 +58,7 @@ app.use('/api/customers', customerRoutes);
 app.use('/api/sales-orders', salesOrderRoutes);
 app.use('/api/returns', returnRoutes);
 app.use('/api/reports', reportRoutes);
+app.use('/api/users', userRoutes);
 
 // Routes
 app.get('/api/health', (req, res) => {

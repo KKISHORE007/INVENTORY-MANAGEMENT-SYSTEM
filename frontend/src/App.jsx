@@ -14,6 +14,7 @@ import Customers from './pages/Customers';
 import SalesOrders from './pages/SalesOrders';
 import Returns from './pages/Returns';
 import Reports from './pages/Reports';
+import Users from './pages/Users';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
             <Route path="sales-orders" element={<SalesOrders />} />
             <Route path="returns" element={<Returns />} />
             <Route path="reports" element={<Reports />} />
+            <Route path="users" element={<Users />} />
             {/* Add more routes here later */}
           </Route>
         </Routes>
