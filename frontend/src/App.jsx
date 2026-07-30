@@ -12,6 +12,7 @@ import Suppliers from './pages/Suppliers';
 import PurchaseOrders from './pages/PurchaseOrders';
 import Customers from './pages/Customers';
 import SalesOrders from './pages/SalesOrders';
+import Returns from './pages/Returns';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <Route path="purchase-orders" element={<PurchaseOrders />} />
             <Route path="customers" element={<Customers />} />
             <Route path="sales-orders" element={<SalesOrders />} />
+            <Route path="returns" element={<Returns />} />
             {/* Add more routes here later */}
           </Route>
         </Routes>
