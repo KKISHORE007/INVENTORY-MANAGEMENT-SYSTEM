@@ -14,6 +14,8 @@ const warehouseRoutes = require('./routes/warehouseRoutes');
 const inventoryRoutes = require('./routes/inventoryRoutes');
 const supplierRoutes = require('./routes/supplierRoutes');
 const purchaseOrderRoutes = require('./routes/purchaseOrderRoutes');
+const customerRoutes = require('./routes/customerRoutes');
+const salesOrderRoutes = require('./routes/salesOrderRoutes');
 
 const initCronJobs = require('./jobs/cronJobs');
 
@@ -47,6 +49,8 @@ app.use('/api/warehouses', warehouseRoutes);
 app.use('/api/inventory', inventoryRoutes);
 app.use('/api/suppliers', supplierRoutes);
 app.use('/api/purchase-orders', purchaseOrderRoutes);
+app.use('/api/customers', customerRoutes);
+app.use('/api/sales-orders', salesOrderRoutes);
 
 // Routes
 app.get('/api/health', (req, res) => {

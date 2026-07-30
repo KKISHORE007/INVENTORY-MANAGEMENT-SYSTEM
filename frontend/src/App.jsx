@@ -10,6 +10,8 @@ import Warehouses from './pages/Warehouses';
 import Inventory from './pages/Inventory';
 import Suppliers from './pages/Suppliers';
 import PurchaseOrders from './pages/PurchaseOrders';
+import Customers from './pages/Customers';
+import SalesOrders from './pages/SalesOrders';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
             <Route path="inventory" element={<Inventory />} />
             <Route path="suppliers" element={<Suppliers />} />
             <Route path="purchase-orders" element={<PurchaseOrders />} />
+            <Route path="customers" element={<Customers />} />
+            <Route path="sales-orders" element={<SalesOrders />} />
             {/* Add more routes here later */}
           </Route>
         </Routes>
