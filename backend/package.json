@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
+    "seed": "node src/seeder.js",
+    "seed:destroy": "node src/seeder.js -d",
     "test": "jest"
   },
   "keywords": [],
