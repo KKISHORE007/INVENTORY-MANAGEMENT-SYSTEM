@@ -11,3 +11,5 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+
+// style: minor formatting update 3
