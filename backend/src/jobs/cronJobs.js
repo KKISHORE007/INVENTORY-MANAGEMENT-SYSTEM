@@ -37,3 +37,5 @@ const initCronJobs = () => {
 };
 
 module.exports = initCronJobs;
+
+// style: minor formatting update 17
