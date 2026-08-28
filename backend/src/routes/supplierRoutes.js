@@ -18,3 +18,5 @@ router
   .put(protect, authorize('Admin', 'Manager'), updateSupplier);
 
 module.exports = router;
+
+// style: minor formatting update 40
