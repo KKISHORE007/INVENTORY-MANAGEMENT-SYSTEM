@@ -39,3 +39,5 @@ const supplierSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model('Supplier', supplierSchema);
+
+// style: minor formatting update 27
