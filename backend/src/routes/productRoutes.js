@@ -22,3 +22,5 @@ router
   .delete(protect, authorize('Admin'), deleteProduct);
 
 module.exports = router;
+
+// style: minor formatting update 35
