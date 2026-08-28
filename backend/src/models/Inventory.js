@@ -35,3 +35,5 @@ const inventorySchema = new mongoose.Schema(
 inventorySchema.index({ product: 1, warehouse: 1, batchNo: 1 }, { unique: true });
 
 module.exports = mongoose.model('Inventory', inventorySchema);
+
+// style: minor formatting update 21
