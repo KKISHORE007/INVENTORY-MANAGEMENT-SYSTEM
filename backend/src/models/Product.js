@@ -66,3 +66,5 @@ const productSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model('Product', productSchema);
+
+// style: minor formatting update 22
