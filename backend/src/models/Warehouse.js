@@ -26,3 +26,5 @@ const warehouseSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model('Warehouse', warehouseSchema);
+
+// style: minor formatting update 29
