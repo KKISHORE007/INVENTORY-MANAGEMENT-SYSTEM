@@ -41,3 +41,5 @@ exports.updateCustomer = async (req, res) => {
     res.status(400).json({ success: false, message: error.message });
   }
 };
+
+// style: minor formatting update 6
