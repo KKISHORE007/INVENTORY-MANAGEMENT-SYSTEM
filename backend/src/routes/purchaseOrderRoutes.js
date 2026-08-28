@@ -18,3 +18,5 @@ router
   .post(protect, authorize('Admin', 'Manager', 'Staff'), receivePurchaseOrder);
 
 module.exports = router;
+
+// style: minor formatting update 36
