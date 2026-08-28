@@ -39,3 +39,5 @@ const authorize = (...roles) => {
 };
 
 module.exports = { protect, authorize };
+
+// style: minor formatting update 18
