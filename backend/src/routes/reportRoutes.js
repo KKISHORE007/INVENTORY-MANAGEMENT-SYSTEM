@@ -13,3 +13,5 @@ router.get('/low-stock', protect, authorize('Admin', 'Manager'), getLowStock);
 router.get('/sales', protect, authorize('Admin', 'Manager'), getSalesReport);
 
 module.exports = router;
+
+// style: minor formatting update 37
