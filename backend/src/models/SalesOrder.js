@@ -60,3 +60,5 @@ const salesOrderSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model('SalesOrder', salesOrderSchema);
+
+// style: minor formatting update 25
