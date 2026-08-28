@@ -45,3 +45,5 @@ const stockMovementSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model('StockMovement', stockMovementSchema);
+
+// style: minor formatting update 26
