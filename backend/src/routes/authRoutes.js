@@ -10,3 +10,5 @@ router.get('/logout', logout);
 router.get('/me', protect, getMe);
 
 module.exports = router;
+
+// style: minor formatting update 30
