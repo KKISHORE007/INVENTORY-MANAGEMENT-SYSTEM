@@ -67,3 +67,5 @@ const purchaseOrderSchema = new mongoose.Schema(
 );
 
 module.exports = mongoose.model('PurchaseOrder', purchaseOrderSchema);
+
+// style: minor formatting update 23
